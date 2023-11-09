@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div id="loginSection">
+            <h2>Login</h2>
+            <label for="username">Username:</label>
+            <input type="text" id="username" placeholder="Username" />
+            <label for="password">Password:</label>
+            <input type="password" id="password" placeholder="Password" />
+            <button id="loginButton" onclick="checkLogin()">Login</button>
+            <p id="loginError" class="error-message"></p>
+        </div>
+        <div id="colorSection" style="display: none;">
+            <h2>Period Color Generator</h2>
+            <label for="periodNumber">Enter the last 3 digits of the period number:</label>
+            <input type="text" id="periodNumber" placeholder="e.g., 123" />
+            <button id="showColorButton" onclick="generateColors()">Show 5 Colors</button>
+            <div id="colorDisplay"></div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
